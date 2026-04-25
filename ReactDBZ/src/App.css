@@ -40,146 +40,12 @@ body {
   cursor: pointer;
 } */
 
-.imgs {
-  height: 300px;
-  width: 50%;
-  transition: transform 0.4s ease;
-  overflow: visible;
-  transform-origin: top center;
-  cursor: pointer;
-}
-.img-cont{
-    border: 1px solid black;
-    height: 100%;
-    width: 20%;
-    text-align: center;
-    color: RGB(255, 255, 255);
-    background-color:white;
-    border-radius: 10px;
-    margin-top: 50px;
-    flex-wrap: wrap;
-}
-
-.imgs:hover{
-    transform: scale(1.15);
-    filter: drop-shadow(0px 10px 20px rgba(255, 255, 0, 0.4));
-}
-
-#image-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content:space-evenly;
-  align-items: center;
-  background-color:RGB(39, 43, 51);
-  gap: 50px;
-  margin-top: 20px;
-  padding: 50px;
-  flex-wrap: wrap;
-}
-
-#char-container{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color:RGB(39, 43, 51);
-  gap: 50px;
-  margin-top: 20px;
-  padding: 50px;
-}
-
-
-#planet-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background-color:RGB(39, 43, 51);
-  gap: 50px;
-  margin-top: 20px;
-  padding: 50px;
-  flex-wrap: wrap;
-}
-
-#navbar {
-  display: flex;
-  background-color: whitesmoke;
-  justify-content: space-between;
-  width: 100vw;
-  align-items: center;
-  padding: 0px 0px 0px 10px;
-}
-
-#homeimg {
-  height: 60px;
-  width: 100px;
-}
-
-#rightside {
-  display: flex;
-  gap: 20px;
-  justify-content: space-around;
-  margin-right: 20px;
-}
-
-#supportbutton {
-  color: white;
-  font-weight: bold;
-  border: 1px solid RGB(251, 192, 45);
-  background-color: RGB(251, 192, 45);
-  border-radius: 10px;
-}
-
-a {
-  padding: 10px;
-  color: RGB(97, 97, 97);
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: large;
-}
-
-a:hover{
-  cursor: pointer;
-  font-size: x-large;
-  color: black;
-}
-
-.Char-det{
-  line-height: 0.8;
-  background-color: RGB(60, 62, 68);
-  width: 99%;
-  border: 1px solid black;
-  margin: 0;
-  padding: 1px;
-  border-radius: 10px;
-  /* transform: translate(-1px); */
-}
-
-#bgimg{
-  height: 30%;
-  width: 50%;
-}
-
 h3{
   color: white;
   font-size: xx-large;
   line-height: 0.5;
 }
-
-strong{
-  color: white;
-}
-
-p{
-  color: RGB(246, 189, 46);
-  font-weight: 700;
-  font-size: large;
-  line-height: 1;
-  padding: 5px;
-}
-
-.planetimgs{
+/* .planetimgs{
   height: 200px;
   width: 80%;
   transition: transform 0.4s ease;
@@ -225,4 +91,4 @@ p{
 
 .Pl-det p {
   padding: 10px;
-}
+} */

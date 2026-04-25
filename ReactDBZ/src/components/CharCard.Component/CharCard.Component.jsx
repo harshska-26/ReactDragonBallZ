@@ -1,41 +1,30 @@
+import { useEffect, useState } from "react";
+import { DragonBallData } from "../../services/Dragonball.Service";
 import "./CharCard.Component.css";
+import CharDetails from "../CharDetails.Component/CharDetails.Component";
 
-export const CharCard = ({ items }) => {
-    const { name, image, race, gender, affiliation, ki, maxKi } = items
-    return (
-        <div className="char-card">
-            <img src={image} alt={name} className="char-image"/>
-            <div className="img-details">
-            <h3 className="char-name">{name}</h3>
-            <p className="race-gender">{race} - {gender}</p>
-            <p ><strong>Affiiation : </strong>{affiliation}</p>
-            <p><strong>Ki : </strong>{ki}</p>
-            <p><strong>Total Ki : </strong>{maxKi}</p>
-            </div>
-        </div>
-    );
-}
+export const CharCard = () => {
+  const [characterDet, setCharacterDet] = useState([]);
 
-// export const EachCharacterCard = ({ data }) => {
-//   const { id, name, ki, maxKi, race, image, description, gender,affiliation } = data;
-//    let characterDetails = [
-//     {Affiliation:affiliation},
-//     {KI:ki},
-//     {"Total KI":maxKi}
-//    ];
-  
-//   return (
-//     <div className="each-card">
-//       <img src={image} alt={name} className="each-image" />
-//       <div className="img-details">
-//         <h2 className="def-clr text-title">{name}</h2>
-//         <p className="def-clr custom-clr">{race} - {gender}</p>
-//          {characterDetails.map((eachInfo,index)=>{
-//             let charSpecs=Object.entries(eachInfo)
-//             return (
-//             <div className="each-info" key={index}>
-//                 <p className="def-clr">{charSpecs[0][0]}:</p>
-//                 <p className="def-clr custom-clr">{charSpecs[0][1]}</p>
-//             </div>
-//          )
-//          })}
+  useEffect(() => {
+    const dataFunc = async () => {
+      const data = await DragonBallData();
+      setCharacterDet(data);
+    };
+    dataFunc();
+  }, []);
+
+  return (
+    <div id="image-container">
+      <img
+        src="https://web.dragonball-api.com/images-compress/logo_dragonballapi.webp"
+        id="bgimg"
+      />
+      <div id="char-container">
+        {characterDet.map((char) => {
+          return <CharDetails key={char.id} items={char} />;
+        })}
+      </div>
+    </div>
+  );
+};

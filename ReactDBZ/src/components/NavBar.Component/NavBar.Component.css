@@ -1,0 +1,43 @@
+#navbar {
+  display: flex;
+  background-color: whitesmoke;
+  justify-content: space-between;
+  width: 100vw;
+  align-items: center;
+  padding: 0px 0px 0px 10px;
+}
+
+#homeimg {
+  height: 60px;
+  width: 100px;
+}
+
+#rightside {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  margin-right: 20px;
+}
+
+#supportbutton {
+  color: white;
+  font-weight: bold;
+  border: 1px solid RGB(251, 192, 45);
+  background-color: RGB(251, 192, 45);
+  border-radius: 10px;
+}
+
+a {
+  padding: 10px;
+  color: RGB(97, 97, 97);
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+}
+
+a:hover{
+  cursor: pointer;
+  font-size: x-large;
+  color: black;
+}
