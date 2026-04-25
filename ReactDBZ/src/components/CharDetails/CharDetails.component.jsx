@@ -1,8 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import "./CharDetails.Component.css";
-const CharDetails = ({ items }) => {
-  const { name, image, race, gender, affiliation, ki, maxKi } = items;
+const CharDetails = ({ charItems }) => {
+  const { name, image, race, gender, affiliation, ki, maxKi } = charItems;
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/eachcharacter", { state: { charItems } });
+  }
+
   return (
-    <div className="char-card">
+    <div className="char-card" onClick={handleClick}>
       <img src={image} alt={name} className="char-image" />
       <div className="img-details">
         <h3 className="char-name">{name}</h3>

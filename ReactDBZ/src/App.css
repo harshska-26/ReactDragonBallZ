@@ -12,83 +12,8 @@ body {
   flex-wrap: wrap;
 }
 
-
-/* #gohan-img{
-  height: 300px;
-  width: 70%;
-  transition: transform 0.4s ease;
-  overflow: visible;
-  transform-origin: top center;
-  cursor: pointer;
-}
-
-#bulma-img{
-  height: 300px;
-  width: 30%;
-  transition: transform 0.4s ease;
-  overflow: visible;
-  transform-origin: top center;
-  cursor: pointer;
-}
-
-#dodoria-img{
-  height: 300px;
-  width: 70%;
-  transition: transform 0.4s ease;
-  overflow: visible;
-  transform-origin: top center;
-  cursor: pointer;
-} */
-
 h3{
   color: white;
   font-size: xx-large;
   line-height: 0.5;
 }
-/* .planetimgs{
-  height: 200px;
-  width: 80%;
-  transition: transform 0.4s ease;
-  overflow: visible;
-  transform-origin: top center;
-  cursor: pointer;
-}
-
-.planetimgs:hover{
-  transform: scale(1.15);
-}
-
-.pl-cont{
-    border: 1px solid black;
-    height: 400px;
-    width: 20%;
-    text-align: center;
-    color: RGB(255, 255, 255);
-    background-color:white;
-    border-radius: 10px;
-    margin-top: 50px;
-}
-
-#PlanetsHeading{
-  font-size: xx-large;
-  color: black;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  width: 100%;
-  background-image: linear-gradient(to right, white , orange );
-}
-
-
-.Pl-det{
-  line-height: 0.8;
-  background-color: RGB(60, 62, 68);
-  height: 50%;
-  width: 99%;
-  border: 1px solid black;
-  margin: 0;
-  padding: 1px;
-  border-radius: 10px;
-}
-
-.Pl-det p {
-  padding: 10px;
-} */
