@@ -7,15 +7,23 @@ export const Characters = () => {
 
   const character = location.state.charItems;
   
-  const handleClick = () => {
-    navigate("/home");
+  const homeClick = () => {
+    navigate("/");
+  };
+  const planetsClick = () => {
+    navigate("/planets");
+  };
+  const charactersClick = () => {
+    navigate("/characters");
   };
   const { name, image, race, gender, affiliation, ki, maxKi, description } = character;
 
   return (
     <>
       <div className="topbar">
-        <button id="button" onClick={handleClick}>Home</button>
+        <button id="button" onClick={homeClick}>Home</button>
+        <button id="button" onClick={planetsClick}>Planets</button>
+        <button id="button" onClick={charactersClick}>Characters</button>
       </div>
       <div className="box">
         <div className="img-container">
